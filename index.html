@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Anchor</title>
+
+
+    <meta name="author" content="Lucas Meloto">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: "Poppins", sans-serif; -->
+    <!-- font-family: "Poppins", sans-serif; -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Incio do cabeçalho -->
+
+    <header id="topo">
+        <div class="container">
+            <div id="logotipo">
+
+                <a href="#">
+                    <!--Pode ser usado dentro ou fora / usando dentro dos >< ele fica como link ao todo / Fora ele fica como um link -->
+                    <i class="fa-solid fa-anchor"></i>
+                    Anchor
+                </a>
+            </div>
+
+
+            <nav id="menu">
+                <!-- Menu Desktop -->
+                <ul id="navegacao">
+                    <li>
+                        <a href="#" class="linkmenu">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="linkmenu">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#" class="linkmenu">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#" class="linkmenu">Equipe</a>
+                    </li>
+                    <li>
+                        <a href="#" class="linkmenu">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- menu mobile -->
+
+                <select name="menumobile" id="menumobile">
+                    <option value="">Navegação</option>
+                    <option value="index.html">Home</option>
+                    <option value="index.html">Sobre</option>
+                    <option value="index.html">Serviços</option>
+                    <option value="index.html">Equipe</option>
+                    <option value="index.html">Contato</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Final do cabeçalho -->
+
+
+    <!-- Inicio do Banner -->
+    <section id="banner">
+        <div class="container">
+            <div id="textobanner">
+                <h1 class="gradient">Desenvolvemos <br> sites e apps</h1>
+
+                <a href="" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <!-- Final do Banner -->
+
+    <!-- Inicio de Sobre -->
+
+    <section id="sobre">
+        <div class="container">
+            <div class="texto-box">
+                <h2>Sobre Nós</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis doloribus debitis nostrum harum
+                    sunt iure perferendis provident obcaecati eligendi nobis?</p>
+
+                <!-- Item -->
+
+                <div class="infobox">
+                    <div class="icone">
+                        <i class="fa-solid fa-medal gradient"></i>
+                    </div>
+                    <div class="texto">
+                        <h4>Qualidade</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora.</p>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="icone">
+                        <i class="fa-solid fa-toolbox gradient"></i>
+                    </div>
+                    <div class="texto">
+                        <h4>Experiência</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora.</p>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="icone">
+                        <i class="fa-solid fa-lightbulb gradient"></i>
+                    </div>
+                    <div class="texto">
+                        <h4>Inovação</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgbox">
+                <img src="img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Final de Sobre -->
+
+    <!-- Inicio de Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <div class="cabecalho">
+                <div>
+                    <h2>Nossos Serviços</h2>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, commodi consequuntur nihil
+                        deserunt dicta repellat.</p>
+
+                </div>
+
+                <div>
+
+                    <a href="#" class="btn">Ver Todos</a>
+
+                </div>
+            </div>
+
+
+
+            <div class="cards">
+                <!-- Abas -->
+                <a href="#" class="servico-card">
+
+                    <i class="fa-solid fa-globe gradient"></i>
+                    <h3>Website Pro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, officiis?</p>
+
+                    <span class="circle"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#" class="servico-card">
+
+                    <i class="fa-solid fa-cart-shopping gradient"></i>
+                    <h3>E-commerce</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, officiis?</p>
+
+                    <span class="circle"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#" class="servico-card">
+
+                    <i class="fa-solid fa-mobile gradient"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, officiis?</p>
+
+                    <span class="circle"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#" class="servico-card">
+
+                    <i class="fa-solid fa-layer-group gradient"></i>
+                    <h3>Aplicações Web</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, officiis?</p>
+
+                    <span class="circle"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#" class="servico-card">
+
+                    <i class="fa-solid fa-chart-simple gradient"></i>
+                    <h3>Marketing Digital</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, officiis?</p>
+
+                    <span class="circle"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#" class="servico-card">
+
+                    <i class="fa-solid fa-magnifying-glass gradient"></i>
+                    <h3>SEO</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, officiis?</p>
+
+                    <span class="circle"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Final de Serviços -->
+
+    <!-- Inicio de Institucional -->
+
+    <section id="instituto">
+        <div class="container">
+
+            <div class="img-box">
+                <img src="img/institutional.jpg" alt="">
+            </div>
+
+            <div class="texto-box">
+                <h2>Institucional</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus suscipit et exercitationem vitae
+                    explicabo aperiam praesentium ut repellendus quas dolore!</p>
+
+                <div class="infobox">
+                    <div class="icone">
+                        <i class="fa-solid fa-bullseye gradient"></i>
+                    </div>
+                    <div class="texto">
+                        <h4>Missão</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora.</p>
+                    </div>
+                </div>
+
+                <div class="infobox">
+                    <div class="icone">
+                        <i class="fa-solid fa-eye gradient"></i>
+                    </div>
+                    <div class="texto">
+                        <h4>Visão</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora.</p>
+                    </div>
+                </div>
+
+                <div class="infobox">
+                    <div class="icone">
+                        <i class="fa-solid fa-gem gradient"></i>
+                    </div>
+                    <div class="texto">
+                        <h4>Valores</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Final de Institucional -->
+
+    <!-- Inicio de Equipe -->
+    <section id="equipe">
+        <div class="container">
+            <div class="nossa_equipe">
+                <h2>Nossa Equipe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque labore maxime nemo architecto
+                    voluptatibus.</p>
+            </div>
+
+
+            <div class="cards">
+                <!-- Abas -->
+                <div class="equipe-card">
+
+                    <img src="img/equipe/1.png" alt="Amelia Desenvolvedora FullStack">
+                    <h4>Amelia Shepherd</h4>
+
+                    <p>Dev FullStack</p>
+
+                    <ul>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="equipe-card">
+
+                    <img src="img/equipe/2.png" alt="George Social Midia">
+                    <h4>George O'Malley</h4>
+
+                    <p>Social Midia</p>
+
+                    <ul>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="equipe-card">
+
+                    <img src="img/equipe/3.png" alt="Mark Designer UI/UX">
+                    <h4>Mark Sloan</h4>
+
+                    <p>Designer UI/UX</p>
+
+                    <ul>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#" class="sociais gradientsocial"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Final de Equipe -->
+
+
+    <!-- Inicio de Fale Conosco -->
+    <section id="formulario">
+        <div class="container">
+            <div class="fale-box">
+
+                <h2>Fale Conosco</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis doloribus debitis nostrum harum
+                    sunt iure perferendis provident obcaecati eligendi nobis?</p>
+
+
+
+                <form action="">
+                    <input type="text" name="Nome" class="campoform" placeholder="Nome">
+
+                    <input type="email" name="email" class="campoform" placeholder="E-mail">
+
+                    <input type="fone" name="teleforne" class="campoform" placeholder="Telefone">
+
+                    <input type="submit" class="btn" value="Enviar">
+                </form>
+
+            </div>
+            <div class="imgfalebox">
+                <img src="img/contact.jpg" alt="Imagem mostrando os funcionarios entrando em contato com os clientes">
+            </div>
+
+        </div>
+    </section>
+    <!-- End de Fale Conosco -->
+
+    <!-- Inicio de Rodapé -->
+    <footer id="rodape">
+        <div class="container">
+
+                <div class="descricao">
+                    <a href="#">
+                        <i class="fa-solid fa-anchor gradient"><span> Anchor</span></i>
+                    </a>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia error perspiciatis voluptatibus
+                        harum fuga labore?</p>
+
+                    <ul>
+                        <li><a href="#" class=" gradient"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#" class=" gradient"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li><a href="#" class=" gradient"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#" class=" gradient"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contato">
+                    <h4>Entre em Contato</h4>
+
+                    <p><i class="fa-solid fa-phone"></i>
+                        (19) 2105-0199</p>
+
+                    <p><i class="fa-solid fa-envelope"></i>
+                        contato@anchor.com.br</p>
+
+                    <p><i class="fa-solid fa-location-dot"></i>
+                        Rua Santa Cruz, 1148 - Alto</p>
+                    <p><i class="fa-solid fa-clock"></i>
+                        Seg. à Sex. das 8H às 17H</p>
+                </div>
+
+
+                <div class="links-rapidos">
+                    <h4>Links Rápidos</h4>
+
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                        <li><a href="Servicos.html">Serviços</a></li>
+                        <li><a href="Equipe.html">Equipe</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+
+                    </ul>
+
+
+                </div>
+
+                <div class="servicos-rodape">
+                    <h4>Servicos</h4>
+
+                    <p>Website Pro</p>
+                    <p>E-commerce</p>
+                    <p>Mobile Apps</p>
+                    <p>Aplicações Web</p>
+                    <p>Marketing Digital</p>
+                    <p>SEO</p>
+
+                </div>
+            </div>
+            <div class="copydev">
+                <p>&copy; Copyright 2024 - Anchor - Todos os direitos reservados</p>
+                <p>Desenvolvido por <span class="gradient">Lucas Meloto</span></p>
+            </div>
+    </footer>
+    <!-- End de Rodapé -->
+</body>
+
+</html>

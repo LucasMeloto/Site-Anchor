@@ -1,0 +1,783 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* para colocar a fonte em todos os titulos ↓*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Kanit", sans-serif;
+}
+
+p {
+    color: #818080;
+}
+
+/* Classes Gerais */
+
+.container {
+    width: 98%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    /*pode usar flex-direction tbm para tal questao pode haver soluções diferentes */
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.gradient {
+    background: linear-gradient(45deg, #7a60ff, #cd9ffa);
+    background-clip: text;
+    /*coloca background na area do texto*/
+    -webkit-text-fill-color: transparent;
+    /*serve para deixar o texto transparente*/
+}
+
+.gradientsocial {
+    background: linear-gradient(45deg, #7a60ff, #cd9ffa);
+    background-clip: text;
+    /*coloca background na area do texto*/
+    -webkit-text-fill-color: transparent;
+    /*serve para deixar o texto transparente*/
+}
+
+/* Cabeçalho */
+
+
+#topo {
+    width: 100%;
+    height: 100px;
+    padding-top: 15px;
+    position: fixed;
+    /*deixa o menu fixo após utilizar o scroll*/
+}
+
+#logotipo {
+    width: 100%;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#logotipo a {
+    color: #fff;
+}
+
+#menu {
+    width: 100%;
+    height: 50px;
+}
+
+#navegacao {
+    display: none;
+}
+
+#menumobile {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    background: #ffffff;
+    color: #000000
+}
+
+/* Banner */
+
+#banner {
+    background: #333 url(img/banner.jpg) center no-repeat;
+    background-size: cover;
+    padding: 150px 0 60px;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+
+#banner h1 {
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #7a60ff, #cd9ffa);
+    /* para fazer mesclagem de cores*/
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    /*espaçamento de letra*/
+    display: block;
+    width: fit-content;
+    /*para obdecer o tamanho dele*/
+    margin: 0 auto;
+    border: 0;
+}
+
+/*Sobre*/
+
+#sobre {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.infobox {
+    margin-top: 40px;
+}
+
+.infobox i {
+    font-size: 40px;
+}
+
+.infobox h4 {
+    font-size: 20px;
+}
+
+.imgbox {
+    margin-top: 40px;
+}
+
+.imgbox img {
+    box-shadow: 10px 10px 0 #cd9ffa;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h2::before
+
+/* para trazer elemento antes do elemneto seleiconado*/
+    {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: linear-gradient(45deg, #7a60ff, #cd9ffa);
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+/* Serviços */
+
+#servicos {
+    padding: 50px 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+#servicos .btn {
+    margin-top: 20px;
+}
+
+.servico-card {
+    display: block;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 40px;
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+    transition: all .4s;
+    position: relative;
+}
+
+.servico-card:hover {
+    background: linear-gradient(45deg, #7a60ff, #cd9ffa);
+    color: #fff;
+    transform: translateY(-10px);
+
+}
+
+
+.servico-card:hover h3,
+.servico-card:hover p,
+.servico-card:hover .circle {
+
+    color: #fff;
+    border-color: #fff;
+}
+
+.servico-card:hover .gradient {
+    background: #fff;
+    background-clip: text;
+}
+
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #a8a8aa;
+    color: #a8a8aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 0;
+    /* Centraliza elementos HTML*/
+    border-radius: 50%;
+}
+
+.servico-card h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.servico-card i {
+    font-size: 40px
+}
+
+.circle i {
+    /* Pode se usar !important*/
+    font-size: 16px;
+}
+
+.servico-card:first-child::before {
+    content: '';
+    /*precisa quando se utiliza before , pode se colocar coisas para colocar elementos pronto , aspas vazia e só para ele obdecer*/
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 10px solid #7a60ff;
+    border-left: 10px solid #7a60ff;
+}
+
+.servico-card:last-child:before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    border-right: 10px solid #7a60ff;
+    border-bottom: 10px solid #7a60ff;
+}
+
+/* institucional */
+
+#instituto {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.img-box {
+    margin-bottom: 40px;
+}
+
+.img-box img {
+    box-shadow: -10px 10px 0 #cd9ffa;
+}
+
+/*Equipe*/
+
+#equipe {
+    padding: 50px 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+.equipe-card {
+    display: block;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 40px;
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+    transition: all .4s;
+    position: relative;
+}
+
+.equipe-card:hover .gradientsocial {
+    background: #fff;
+    background-clip: text;
+}
+
+.equipe-card:hover {
+    background: linear-gradient(45deg, #7a60ff, #cd9ffa);
+    transform: translateY(-10px);
+}
+
+.equipe-card:hover h4,
+.equipe-card:hover p {
+    color: #fff;
+    border-color: #fff;
+}
+
+.equipe-card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.equipe-card p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.equipe-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.equipe-card p {
+    border: 2px solid #a8a8aa;
+    border-radius: 30px;
+}
+
+.equipe-card ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.sociais {
+    font-size: 20px;
+    filter: drop-shadow(0 0 5px #cd9ffa);
+}
+
+.equipe-card:first-child::before {
+    content: '';
+    /*precisa quando se utiliza before , pode se colocar coisas para colocar elementos pronto , aspas vazia e só para ele obdecer*/
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 10px solid #7a60ff;
+    border-left: 10px solid #7a60ff;
+}
+
+.equipe-card:last-child:before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    border-right: 10px solid #7a60ff;
+    border-bottom: 10px solid #7a60ff;
+}
+
+
+/* Fale Conosco */
+
+#formulario {
+    padding: 50px 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+#formulario .texto-box {
+    margin-bottom: 40px;
+}
+
+.campoform {
+    width: 90%;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.campoform::placeholder {
+    padding-left: 10px;
+}
+
+.imgfalebox img {
+    box-shadow: 10px 10px 0 #cd9ffa;
+}
+
+/* rodapé */
+
+#rodape {
+    padding: 50px 0 0 0;
+    background: #212121;
+    text-align: center;
+}
+
+#rodape h4 {
+    color: #fff;
+}
+
+.descricao a {
+    font-size: 25px;
+}
+
+
+.descricao p {
+    margin-bottom: 20px;
+}
+
+.descricao ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.contato {
+    margin-bottom: 40px;
+}
+
+.contato h4 {
+    margin-bottom: 20px;
+}
+
+.links-rapidos {
+    margin-bottom: 40px;
+}
+
+.links-rapidos a {
+    color: #818080;
+    text-decoration: none;
+
+}
+
+.links-rapidos h4 {
+    margin-bottom: 20px;
+}
+
+.servicos-rodape {
+    margin-bottom: 40px;
+}
+
+.servicos-rodape h4 {
+    margin-bottom: 20px;
+}
+
+.copydev {
+    background: #1a1a1a;
+}
+
+.copydev p {
+    color: #fff;
+}
+
+
+
+
+@media (min-width: 375px) {}
+
+@media (min-width: 426px) {}
+
+@media (min-width: 576px) {
+
+    /*BANNER*/
+    #banner h1 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    /*SOBRE*/
+
+    .imgbox {
+        width: 600px;
+        margin: 40px auto 0;
+    }
+
+    /*Instituicional*/
+
+    .img-box {
+        width: 600px;
+        margin: 40px auto 40px;
+    }
+
+    /*Fale Conosco*/
+
+    .imgfalebox {
+        width: 600px;
+        margin: 40px auto 40px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    /* Cabeçalho*/
+
+    #topo .container {
+        height: 100%;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #topo {
+        height: 70px;
+        padding-top: 0;
+    }
+
+    #logotipo {
+        width: 20%;
+        text-align: left;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    #menumobile {
+        display: none;
+    }
+
+    #navegacao {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .linkmenu {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    #banner {
+        padding-bottom: 120px;
+    }
+
+    #banner h1 {
+        font-size: 75px;
+        line-height: 75px;
+    }
+
+    /* Servicos */
+
+    .servico-card {
+        width: 48%;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /*Equipe*/
+    .equipe-card {
+        width: 30%;
+        height: 320px;
+    }
+
+
+    /* rodapé */
+
+    #rodape .container {
+        flex-direction: row;
+    }
+
+    .descricao,
+    .contato,
+    .links-rapidos,
+    .servicos-rodape {
+        width: 50%;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    /* Banner */
+
+    h2 {
+        font-size: 48px;
+    }
+
+    #banner {
+        padding-bottom: 150px;
+    }
+
+    #banner h1 {
+        font-size: 96px;
+        line-height: 96px;
+    }
+
+    /* SOBRE */
+    #sobre .container {
+        flex-direction: row;
+    }
+
+    #sobre {
+        text-align: left;
+    }
+
+    .texto-box,
+    .imgbox {
+        width: 50%;
+        padding: 10px;
+    }
+
+    h2::before {
+        margin: 0 0 10px;
+    }
+
+    .infobox {
+        display: flex;
+    }
+
+    .icone {
+        width: 10%;
+        margin-right: 20px;
+    }
+
+    .texto {
+        width: 90%;
+    }
+
+    .infobox h4 {
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .imgbox {
+        height: 480px;
+        margin: 0;
+    }
+
+    /*Serviços*/
+
+    .servico-card {
+        width: 31%;
+    }
+
+    #servicos {
+        text-align: left;
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .cabecalho div:first-child {
+        width: 85%;
+    }
+
+    /* Institucional */
+
+    #instituto .container {
+        flex-direction: row;
+    }
+
+    #instituto {
+        text-align: left;
+    }
+
+    .texto-box,
+    .img-box {
+        width: 49%;
+        padding: 10px;
+    }
+
+    .img-box {
+        height: 480px;
+        margin: 0;
+    }
+
+    /*Equipe*/
+
+    .nossa_equipe {
+        text-align: left;
+    }
+
+    .equipe-card {
+        width: 31%;
+        height: 360px;
+    }
+
+    /* Fale Conosco */
+
+    #formulario .container {
+        flex-direction: row;
+    }
+
+    #formulario {
+        text-align: left;
+    }
+
+    .fale-box,
+    .imgfalebox {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .imgfalebox {
+        height: 480px;
+        margin: 0;
+    }
+
+    #formulario .btn {
+        margin: 0;
+    }
+
+    /* rodapé */
+
+
+    #rodape .container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
+
+    .descricao {
+        margin-right: 40px;
+        text-align: left;
+    }
+
+    .descricao ul {
+        justify-content: initial;
+    }
+
+    .contato h4, p {
+        text-align: left;
+    }
+
+    .links-rapidos {
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .servicos-rodape h4,
+    p {
+        text-align: left;
+    }
+
+    .copydev {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+
+}
+
+@media (min-width: 1200px) {}
